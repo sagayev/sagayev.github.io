@@ -1,1 +1,106 @@
-Hellow world
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azərbaycan Respublikasının Bayrağı - CSS, html</title>
+</head>
+<body>
+  
+    
+<style>
+
+.bayraq {
+    margin:auto;
+    /* Margin-lər lazım deyilsə silmək olar. */
+    margin-top: 50px; 
+    position: relative;
+
+
+    --en:600px; /* Bayrağın ölçüsünü dəyişmək üçün bu variable-ı dəyişin. */
+
+
+    --hundurluk: calc(var(--en) /2);
+    --rengh: calc(var(--hundurluk) /3);
+    }
+
+.mavi {
+    width:var(--en);
+    height:var(--rengh);
+    background-color: #00b5e2;
+    margin: auto;
+}
+
+.qirmizi {
+    width:var(--en);
+    height:var(--rengh);
+    background-color: #ef3340;
+    margin: auto;
+
+}
+
+.yasil {
+    width:var(--en);
+    height:var(--rengh);
+    background-color: #509e2F;
+    margin: auto;
+
+}
+
+
+.aypara {
+    position:absolute;
+    top:calc(7*var(--en)/40);
+    border-radius: 50%;
+    margin:auto;
+    margin-left:calc(4*var(--hundurluk)/5);
+    width:calc(0.9 * var(--hundurluk)/3);
+    height:calc(0.9 * var(--hundurluk)/3);
+    background-color: white;
+           
+}
+.aypara2 {
+    position:absolute;
+    top:calc(3*var(--en)/16);
+    border-radius: 50%;
+    margin:auto;
+    margin-left:calc(var(--en)/2 - var(--hundurluk)/60 - var(--hundurluk)/8);
+    width:calc(3/4 * var(--hundurluk)/3);
+    height:calc(3/4 * var(--hundurluk)/3);
+    background-color: #ef3340;
+    }
+
+
+.ulduz8 {
+    position:absolute;
+    top:calc(5*var(--en)/24);
+    margin:auto;
+    margin-left:calc(4*var(--hundurluk)/5 + 7*var(--hundurluk)/30);
+    width:calc(var(--en)/12);
+    height:calc(var(--en)/12);
+    background-color:white; 
+    clip-path: polygon(0% 50%, 25% 40%, 15% 15%, 
+    40% 25%, 50% 0%, 60% 25%, 
+    85% 15%, 75% 40%, 100% 50%,
+    75% 60%, 85% 85%, 60% 75%,
+    50% 100%, 40% 75%, 15% 85%,
+    25% 60%
+  );
+   
+}
+
+
+
+</style>
+
+<body>
+    <div class="bayraq">
+        <div class="mavi"></div>
+        <div class="qirmizi">
+            <div class="aypara"></div>
+            <div class="aypara2"></div>
+            <div class="ulduz8"></div>
+        </div>
+        <div class="yasil"></div>
+    </div>
+</body>
+</html>
